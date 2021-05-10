@@ -1,0 +1,129 @@
+/*----------------字体调整----------------*/
+
+@font-face {
+    font-family: 'arzhu';
+    src: url('https://cdn.jsdelivr.net/gh/zjwo/CDN@master/font/arzhu.ttf');
+    font-display: swap;
+}
+
+h1#site-title {
+    font-family: arzhu!important
+}
+
+span#subtitle {
+    font-family: arzhu!important
+}
+
+a#site-name {
+    font-family: arzhu!important
+}
+
+
+/*------------- 背景颜色渐变 -----------------*/
+
+#recent-posts>.recent-post-item,
+.layout_page>div:first-child:not(.recent-posts),
+.layout_post>#page,
+.layout_post>#post,
+.read-mode .layout_post>#post {
+    background: var(--light_bg_color)
+}
+
+#aside-content .card-widget {
+    background: var(--light_bg_color)
+}
+
+
+/* 这是背景颜色渐变 */
+
+#web_bg {
+    background: linear-gradient(90deg, rgba(247, 149, 51, .1), rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1))
+}
+
+
+/* 这是全背景图片（“删掉”了banner）+颜色渐变（注意修改时在js目录下将原文件所有内容注释掉 */
+
+
+/* #web_bg {
+    background-image: url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), linear-gradient(100deg, rgba(255, 165, 150, 0.5) 0%, rgba(0, 228, 255, 0.35)), url("https://xwksir-1302576567.cos.ap-nanjing.myqcloud.com//images8aca7f08c37fe5908141a0f53bf8559a.PNG");
+} */
+
+
+/*----------------页脚与背景融合--------------*/
+
+#footer {
+    background: rgba(255, 255, 255, .05);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(0px)
+}
+
+#footer::before {
+    background: rgba(255, 255, 255, .15)
+}
+
+#footer #footer-wrap {
+    color: var(--font-color)
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color)
+}
+
+
+/*----------------------鼠标样式图-----------------------------*/
+
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default;
+}
+
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), default;
+}
+
+
+/*-----------------滚动条----------------------------------*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+ ::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+ ::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+
+
+/*-----------------------去掉版权下划线----------------------------*/
+
+.layout_post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+}
+
+
+/* 博主昵称颜色 */
+
+.author-info__name {
+    color: #23dda5;
+}
+
+
+/*---------------------------------------------------*/
